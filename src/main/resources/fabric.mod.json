@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "testingmod",
+  "version": "${version}",
+
+  "name": "Testing Mod",
+  "description": "This is a mod for me to learn modding!",
+  "authors": [
+    "SoupHuman"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.souphuman.testingmod.TestingMod"
+    ]
+  },
+  "mixins": [
+    "testingmod.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric-api": "*",
+    "minecraft": "1.19.X",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
