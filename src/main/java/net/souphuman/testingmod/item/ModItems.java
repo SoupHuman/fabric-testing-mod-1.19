@@ -12,7 +12,9 @@ import net.minecraft.util.Identifier;
 import net.minecraft.registry.Registry;
 
 public class ModItems {
-    public static final Item FLORIDA = registerItem("florida",
+    public static final Item MONEY = registerItem("money",
+            new Item(new FabricItemSettings()));
+    public static final Item RAW_MONEY = registerItem("raw_money",
             new Item(new FabricItemSettings()));
 
 
@@ -21,7 +23,8 @@ public class ModItems {
     }
 
     public static void addItemsToItemGroup() {
-        addToItemGroup(ItemGroups.INGREDIENTS, FLORIDA);
+        addToItemGroup(ModItemGroups.MONEY, MONEY);
+        addToItemGroup(ModItemGroups.MONEY, RAW_MONEY);
     }
 
     private static void addToItemGroup(ItemGroup group, Item item) {

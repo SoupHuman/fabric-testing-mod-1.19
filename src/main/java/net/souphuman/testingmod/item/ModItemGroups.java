@@ -8,11 +8,11 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
-    public static ItemGroup TEST;
+    public static ItemGroup MONEY;
 
     public static void registerItemGroups() {
-        TEST = FabricItemGroup.builder(new Identifier(TestingMod.Mod_ID, "test"))
-                .displayName(Text.translatable("itemgroup.test"))
-                .icon(() -> new ItemStack(ModItems.FLORIDA)).build();
+        MONEY = FabricItemGroup.builder(new Identifier(TestingMod.Mod_ID, "money"))
+                .displayName(Text.translatable("itemgroup.money"))
+                .icon(() -> new ItemStack(ModItems.MONEY)).build();
     }
 }
