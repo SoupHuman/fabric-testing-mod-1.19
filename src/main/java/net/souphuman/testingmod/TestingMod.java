@@ -1,6 +1,7 @@
 package net.souphuman.testingmod;
 
 import net.fabricmc.api.ModInitializer;
+import net.souphuman.testingmod.block.ModBlocks;
 import net.souphuman.testingmod.item.ModItemGroups;
 import net.souphuman.testingmod.item.ModItems;
 import org.slf4j.Logger;
@@ -17,5 +18,6 @@ public class TestingMod implements ModInitializer {
 	public void onInitialize() {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
